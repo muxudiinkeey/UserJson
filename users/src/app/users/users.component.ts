@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { UsersService } from './users.service';
- import { Iusers } from './user';
 import { CommonModule } from '@angular/common';
 
 @Component({
