@@ -1,3 +1,9 @@
-<div>
- <app-users/>
+<h3> fetch api with HttpClient</h3>
+<button (click)="fetchData()">fetch Data</button>
+
+<div *ngIf="data">
+<pre>{{data | json}}</pre>
 </div>
+<!-- <div>
+ <app-users/>
+</div> -->
