@@ -14,19 +14,5 @@ private uerService = inject (UsersService);
 
 users$ = this.uerService.getUsers();
 }
- /*  users: Iusers[] = [];
-userService = Inject  (UsersService);
-  getUsers: any;
 
-ngOninit(){
-this.ongetUsers();
-}
-
-ongetUsers(){
-  this.getUsers().subscribe((data: Iusers[])=>{
-
-    this.users = data;
-})
-
-} */
 
