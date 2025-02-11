@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
-// import { UsersComponent } from './users/users.component';
 import { CommonModule } from '@angular/common';
 import { UsersComponent } from './users/users.component';
 
