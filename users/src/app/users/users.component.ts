@@ -10,8 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class UsersComponent {
   
-private uerService = inject (UsersService);
+private userService = inject (UsersService);
 
-users$ = this.uerService.getUsers();
+users$ = this.userService.getUsers();
 }
 
