@@ -23,7 +23,7 @@ export class UsersService {
  }
 
  addUser(user: string){
-return this.http.get(this.Url)
+return this.http.post(this.Url, user)
  }
 deleteUser(id: number){
   return this.http.delete(`${this.Url}/$(id)`);
