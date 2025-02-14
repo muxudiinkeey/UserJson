@@ -18,8 +18,8 @@ export class UsersService {
  }
 
 
- getUser(id: string): Observable<any> {
- return this.http.get(`${this.Url}/$(id)`);
+ getUser(id: string): Observable<Iusers[]> {
+ return this.http.get<Iusers[]>(`${this.Url}/$(id)`);
  }
 
  addUser(user: string){
