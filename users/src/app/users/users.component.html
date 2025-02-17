@@ -44,29 +44,43 @@
   <div class="row">
  <div class="col-8">
   <div class="card">
-    <div class="card-header bg-success text-warning">
+    <div class="card-header bg-secondary text-white">
       <h5>Users</h5>
 <div class="card-body">
  <div class="row">
   <div class="col-12">
 
- <table class="table table-hover">
-    <thead>
-      <th>id</th>
-      <th>name</th>
-      <th>UserName</th>
-      <th>email</th>
-    </thead>
-    <tbody>
-      @for (user of users$ | async; track user.id){
-      <tr>
-        <td>{{ user.id }}</td>
-        <td>{{ user.name }}</td>
-        <td>{{ user.username }}</td>
-        <td>{{user.email}}</td>
-       }
-    </tbody>
-  </table> 
+    <table class="table table-hover">
+  
+      <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>UserName</th>
+        <th>email</th>
+        
+      </thead>
+      
+      <tbody>
+        @for (user of users$ | async; track user.id){
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{user.email}}</td>
+          <td>
+         <span>
+          
+            <button class="btn btn-small btn-primary">Edit-user</button>
+            <button class="btn btn-small  btn-warning" style="margin-left: 10px;">delete-user</button>
+            
+         </span>
+         
+          </td>
+         }
+      </tbody>
+      <!-- <div><button class="btn btn-primary" type="submit">Submit</button></div> -->
+      <div><button class="btn btn-light" style="margin-top: 10px; margin-left: 10px;">Add-user</button></div>
+    </table> 
   </div>
 
  </div>
@@ -79,7 +93,7 @@
  </div>
  <div class="col-4">
   <div class="card">
-    <div class="card-header bg-success text-warning">
+    <div class="card-header bg-secondary text-white">
       new user
 
     </div>
@@ -110,7 +124,7 @@
   </div>
 
   <div class="col-6 text-center">
-    <button class="btn btn-success">Save</button>
+    <button class="btn btn-secondary">Save</button>
   </div>
 
  </div>
