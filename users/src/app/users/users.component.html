@@ -1,11 +1,14 @@
 
  <table class="table table-hover">
+  
     <thead>
       <th>id</th>
       <th>name</th>
       <th>UserName</th>
       <th>email</th>
+      
     </thead>
+    
     <tbody>
       @for (user of users$ | async; track user.id){
       <tr>
@@ -13,6 +16,17 @@
         <td>{{ user.name }}</td>
         <td>{{ user.username }}</td>
         <td>{{user.email}}</td>
+        <td>
+       <span>
+        
+          <button class="btn btn-small btn-primary">Edit-user</button>
+          <button class="btn btn-small  btn-warning" style="margin-left: 10px;">delete-user</button>
+          
+       </span>
+       
+        </td>
        }
     </tbody>
+    <!-- <div><button class="btn btn-primary" type="submit">Submit</button></div> -->
+    <div><button class="btn btn-success" style="margin-top: 10px; margin-left: 10px;">Add-user</button></div>
   </table> 
